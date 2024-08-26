@@ -51,6 +51,15 @@ li.menu-item {
     font-size: 16px;
 }
 
+.menu-item-51 {
+    padding-bottom: 20px !important;
+    padding-top: 20px !important;
+}
+
+#site-footer {
+    padding: 0 !important;
+}
+
 @media (max-width: 768px) {
     #logo_planty {
         width: 100%;
@@ -133,3 +142,120 @@ li.menu-item {
 .div_bouton_commande {
     padding: 0 !important;
 }
+
+.div_redimensions {
+    padding: 0 !important;
+}
+
+.grille_accueil {
+    max-height: 170px !important;
+}
+
+    /* canette container */
+
+    /* Canette branches  */
+    .can-container {
+        position: relative;
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .can {
+        position: relative;
+        width: 100%; /* L'image occupe toute la largeur du conteneur */
+        height: auto;
+        z-index: 2;
+    }
+
+    .branches {
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+    .gauche {
+        left: -40%;
+    }
+
+    .droite {
+        right: -40%;
+    }
+
+    /* Pour rendre le design réactif */
+    @media (max-width: 450px) {
+        .gauche, .droite {
+            width: 60%;
+        }
+
+        .branches {
+            bottom: 150px;
+        }
+
+        .gauche {
+            left: -15%;
+        }
+
+        .droite {
+            right: -15%;
+        }
+    }
+
+    /* Footer */
+
+    .canettes_ligne {
+        position: page;
+        bottom: 0;
+        margin-top: 70px;
+    }
+
+    /* Nous Rencontrer */
+
+    .section1 {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+    }
+
+    .petitefleur {
+        position: absolute;
+        top: 18%;
+        left: 17%;
+    }
+
+    .équipe {
+        position: relative;
+        width: 100%;
+        min-width: 450px;
+        z-index: 2;
+    }
+
+    .branche_équipe {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .formulaire1 {
+        position: relative;
+        max-width: 385px;
+    }
+
+
+    .bouton_formulaire_contact {
+        width: 198px !important;
+        height: 55px !important;
+        margin-left: 100px !important;
+    }
+
+    .wpforms-field-label {
+        font-family: Syne;
+        font-size: 20px !important;
+        font-weight: 400 !important;
+    }
+
+    
+    fleur_formulaire
