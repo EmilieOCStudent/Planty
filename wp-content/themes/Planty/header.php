@@ -32,7 +32,7 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 <?php } ?>
 <div id="header">
 <a href="/Planty/index.php">
-    <img src="http://localhost/Planty/wp-content/themes/Planty/images_planty/logo.png" alt="Logo de la marque" id="logo_planty">
+    <img src="/Planty/wp-content/themes/Planty/images_planty/logo.png" alt="Logo de la marque" id="logo_planty">
 </a>
 <?php
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
@@ -47,6 +47,7 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 wp_nav_menu(array(
     'theme_location' => 'menu-1'
   ));
+
 ?>
 </div>
 

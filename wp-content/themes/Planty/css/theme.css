@@ -7,7 +7,6 @@ body * {
 #header {
     display: flex;
     justify-content: space-between;
-    height: 80px;
     align-items: flex-start;
 }
 
@@ -20,14 +19,22 @@ body * {
 }
 
 li.menu-item {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: inline-flex;
     font-size: 19px;
-    padding-right: 60px;
+   /*padding-right: 60px;
     padding-left: 60px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 25px;*/
+    justify-content: center;
+    align-items: center;
+
 }
 
+#menu-item-52, #menu-item-53 {
+    width: 236px;
+    height: 80px;
+}
 #menu-item-52 {
     background-color: #DC9F96;
 }
@@ -38,6 +45,14 @@ li.menu-item {
 
 #menu-item-53 a {
     color: #000000;
+}
+
+#lien-admin {
+    padding-right: 60px;
+}
+#lien-admin a {
+        color: #000000;
+
 }
 
 #menu-footer-1 {
@@ -278,22 +293,22 @@ li.menu-item {
 }
 
 #fraise-commande {
-    background-image: url("http://localhost/Planty/wp-content/uploads/2024/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
+    background-image: url("/Planty/wp-content/uploads/2024/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
     background-size: cover;
 }
 
 #pamplemousse-commande {
-    background-image: url("http://localhost/Planty/wp-content/uploads/2024/08/estudio-bloom-tOitjphtIXU-unsplash-1-1.png");
+    background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-tOitjphtIXU-unsplash-1-1.png");
     background-size: cover;
 }
 
 #framboise-commande {
-    background-image: url("http://localhost/Planty/wp-content/uploads/2024/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1-1.png");
+    background-image: url("/Planty/wp-content/uploads/2024/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1-1.png");
     background-size: cover;
 }
 
 #citron-commande {
-    background-image: url("http://localhost/Planty/wp-content/uploads/2024/08/estudio-bloom-ezqnxsqUZ80-unsplash-1-1.png");
+    background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-ezqnxsqUZ80-unsplash-1-1.png");
     background-size: cover;
 }
 

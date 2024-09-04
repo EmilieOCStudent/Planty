@@ -39,5 +39,21 @@ add_action('wp_enqueue_scripts', 'your_theme_enqueue_styles');
     return ob_get_clean();
 }
 add_shortcode('planty_display_can', 'planty_display_can_shortcode');
+
+function add_admin_link_to_menu($items, $args) {
+    // Vérifie si l'utilisateur est connecté
+    if (is_user_logged_in()&& $args->theme_location === 'menu-1') {
+        // Ajoute le lien d'administration au début du menu
+        $admin_link = '<li  id="lien-admin" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/Planty/wp-admin/">Admin</a></li>';
+
+
+        $position = strpos($items, '</li>') + 5;
+        $items = substr($items, 0, $position) . $admin_link . substr($items, $position);
+
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2);
 ?>
 
