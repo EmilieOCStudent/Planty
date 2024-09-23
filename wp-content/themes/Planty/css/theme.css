@@ -97,361 +97,362 @@ li.menu-item {
     li.menu-item {
         /*display: block;
         align-items: stretch;*/
-         display: flex;
+        display: flex;
         align-items: center;
     }
-    }
+}
 
 
-    /*page d'accueil*/
-    .accueil_gauche {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        width: 30%;
-    }
+/*page d'accueil*/
+.accueil_gauche {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 30%;
+}
 
-    .accueil_droite {
-        position: absolute;
-        top: 20%;
-        right: 20%;
-        width: 30%;
-    }
+.accueil_droite {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 30%;
+}
 
-    .fraise {
-        position: absolute;
-        top: 17%;
-        left: 8%;
-    }
+.fraise {
+    position: absolute;
+    top: 17%;
+    left: 8%;
+}
 
-    .pamplemousse {
-        max-width: 357px !important;
-        position: absolute;
-        top: 12%;
-        right: 4%;
-    }
+.pamplemousse {
+    max-width: 357px !important;
+    position: absolute;
+    top: 12%;
+    right: 4%;
+}
 
-    .framboise {
-        max-width: 245px !important;
-        position: absolute;
-        top: 65%;
-        left: 10%;
-    }
+.framboise {
+    max-width: 245px !important;
+    position: absolute;
+    top: 65%;
+    left: 10%;
+}
 
-    .citron {
-        position: absolute;
-        top: 70%;
-        right: 6%;
-    }
+.citron {
+    position: absolute;
+    top: 70%;
+    right: 6%;
+}
 
-    .elementor-element {
-        --widgets-spacing: 0px !important;
-    }
+.elementor-element {
+    --widgets-spacing: 0px !important;
+}
 
-    #bouton_commande {
-        width: 198px;
-        height: 55px;
-    }
+#bouton_commande {
+    width: 198px;
+    height: 55px;
+}
 
-    .div_bouton_commande {
-        padding: 0 !important;
-    }
+.div_bouton_commande {
+    padding: 0 !important;
+}
 
-    .div_redimensions {
-        padding: 0 !important;
-    }
+.div_redimensions {
+    padding: 0 !important;
+}
 
+.grille_accueil {
+    max-height: 170px !important;
+}
+
+@media (max-width: 768px) {
     .grille_accueil {
-        max-height: 170px !important;
+        width: 100% !important;
     }
+}
 
-    @media (max-width:768px) {
-        .grille_accueil {
-            width: 100% !important;
-        }
-    }
-    /* canette container */
-    /* Canette branches  */
-    .can-container {
-        position: relative;
-        width: 100%;
-        max-width: 250px;
-        margin: 0 auto;
-    }
+/* canette container */
+/* Canette branches  */
+.can-container {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
 
-    .can {
-        position: relative;
-        width: 100%; /* L'image occupe toute la largeur du conteneur */
-        height: auto;
-        z-index: 2;
+.can {
+    position: relative;
+    width: 100%; /* L'image occupe toute la largeur du conteneur */
+    height: auto;
+    z-index: 2;
+}
+
+.branches {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.gauche {
+    left: -40%;
+}
+
+.droite {
+    right: -40%;
+}
+
+/* Pour rendre le design réactif */
+@media (max-width: 450px) {
+    .gauche, .droite {
+        width: 60%;
     }
 
     .branches {
-        position: absolute;
-        bottom: 60px;
-        width: 100%;
-        height: auto;
-        z-index: 1;
+        bottom: 150px;
     }
 
     .gauche {
-        left: -40%;
+        left: -15%;
     }
 
     .droite {
-        right: -40%;
+        right: -15%;
     }
+}
 
-    /* Pour rendre le design réactif */
-    @media (max-width: 450px) {
-        .gauche, .droite {
-            width: 60%;
-        }
+/* Footer */
+.canettes_ligne {
+    position: page;
+    bottom: 0;
+    margin-top: 70px;
+}
 
-        .branches {
-            bottom: 150px;
-        }
+/* Nous Rencontrer */
+.section1 {
+    position: relative;
+    width: 100%;
+    min-width: 450px;
+}
 
-        .gauche {
-            left: -15%;
-        }
+.petitefleur {
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
 
-        .droite {
-            right: -15%;
-        }
-    }
+.équipe {
+    position: relative;
+    width: 100%;
+    min-width: 450px;
+    z-index: 2;
+}
 
-    /* Footer */
-    .canettes_ligne {
-        position: page;
-        bottom: 0;
-        margin-top: 70px;
-    }
+.branche_équipe {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    z-index: 1;
+}
 
-    /* Nous Rencontrer */
-    .section1 {
-        position: relative;
-        width: 100%;
-        min-width: 450px;
-    }
-
-    .petitefleur {
-        position: absolute;
-        top: 18%;
-        left: 17%;
-    }
-
-    .équipe {
-        position: relative;
-        width: 100%;
-        min-width: 450px;
-        z-index: 2;
-    }
-
-    .branche_équipe {
-        position: absolute;
-        right: 5%;
-        bottom: 0;
-        z-index: 1;
-    }
-
-    .formulaire1 {
-        position: relative;
-        max-width: 385px;
-    }
+.formulaire1 {
+    position: relative;
+    max-width: 385px;
+}
 
 
-    .bouton_formulaire_contact {
-        width: 198px !important;
-        height: 55px !important;
-        margin-left: 100px !important;
-    }
+.bouton_formulaire_contact {
+    width: 198px !important;
+    height: 55px !important;
+    margin-left: 100px !important;
+}
 
-    .wpforms-field-label {
-        font-family: Syne;
-        font-size: 20px !important;
-        font-weight: 400 !important;
-    }
+.wpforms-field-label {
+    font-family: Syne;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+}
 
-    /* Commander */
-    #votre-commande {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        font-size: 30px;
-        font-weight: 700;
-        font-family: Syne;
-        color: #FFFFFF;
-    }
+/* Commander */
+#votre-commande {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Syne;
+    color: #FFFFFF;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 860px;
+    gap: 15px;
+    padding-bottom: 30px;
+    border-bottom: #FFFFFF solid 1px;
+}
+
+#fraise-commande {
+    background-image: url("/Planty/wp-content/uploads/2024/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
+    background-size: cover;
+}
+
+#pamplemousse-commande {
+    background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-tOitjphtIXU-unsplash-1-1.png");
+    background-size: cover;
+}
+
+#framboise-commande {
+    background-image: url("/Planty/wp-content/uploads/2024/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1-1.png");
+    background-size: cover;
+}
+
+#citron-commande {
+    background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-ezqnxsqUZ80-unsplash-1-1.png");
+    background-size: cover;
+}
+
+.bg-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+    width: 193px;
+}
+
+.champ-compteur {
+    display: flex;
+    justify-content: center;
+}
+
+.compteur {
+    max-width: 39px;
+    min-height: 56px;
+    margin: auto;
+    margin-top: 15px !important;
+    text-align: center;
+    padding: 0 !important;
+}
+
+/*Chrome*/
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/*Firefox*/
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+.produits h3 {
+    color: #FFFFFF;
+    font-family: Syne;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+#pamplemousse {
+    /* padding-left: 28px !important;*/
+}
+
+#infos-livraison {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 863px;
+}
+
+#infos-livraison h3 {
+    font-family: Syne;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+}
+
+#infos-livraison p {
+    font-family: Syne;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#informations {
+    border-right: 1px solid #FFFFFF;
+    min-width: 410px;
+    padding-right: 30px;
+}
+
+#livraison {
+    min-width: 410px;
+    padding-left: 20px;
+}
+
+.labels {
+    margin-bottom: 15px;
+    border-color: #FFFFFF !important;
+    border-radius: 7px !important;
+}
+
+#envoi-commande {
+    width: 198px;
+    height: 55px;
+    background-color: #E0B9B4;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    border: #E0B9B4;
+    border-radius: 5px;
+    margin-left: 325px !important;
+    margin-bottom: 50px;
+}
+
+/*Responsive commande*/
+@media (max-width: 450px) {
 
     .produits {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 860px;
-        gap: 15px;
-        padding-bottom: 30px;
-        border-bottom: #FFFFFF solid 1px;
-    }
-
-    #fraise-commande {
-        background-image: url("/Planty/wp-content/uploads/2024/08/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
-        background-size: cover;
-    }
-
-    #pamplemousse-commande {
-        background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-tOitjphtIXU-unsplash-1-1.png");
-        background-size: cover;
-    }
-
-    #framboise-commande {
-        background-image: url("/Planty/wp-content/uploads/2024/08/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1-1.png");
-        background-size: cover;
-    }
-
-    #citron-commande {
-        background-image: url("/Planty/wp-content/uploads/2024/08/estudio-bloom-ezqnxsqUZ80-unsplash-1-1.png");
-        background-size: cover;
-    }
-
-    .bg-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 129px;
-        width: 193px;
-    }
-
-    .champ-compteur {
-        display: flex;
-        justify-content: center;
-    }
-
-    .compteur {
-        max-width: 39px;
-        min-height: 56px;
-        margin: auto;
-        margin-top: 15px !important;
-        text-align: center;
-        padding: 0 !important;
-    }
-
-    /*Chrome*/
-    input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-    }
-
-    /*Firefox*/
-    input[type="number"] {
-        -moz-appearance: textfield;
-    }
-
-
-    .produits h3 {
-        color: #FFFFFF;
-        font-family: Syne;
-        font-weight: 800;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    #pamplemousse {
-        /* padding-left: 28px !important;*/
+        max-width: 450px;
+        display: flex !important;
+        flex-wrap: wrap;
     }
 
     #infos-livraison {
-        margin-top: 50px;
-        padding-bottom: 30px;
-        display: flex;
-        justify-content: space-evenly;
-        width: 863px;
-    }
-
-    #infos-livraison h3 {
-        font-family: Syne;
-        font-weight: 700;
-        font-size: 30px;
-        color: #FFFFFF;
-        padding-bottom: 30px;
-    }
-
-    #infos-livraison p {
-        font-family: Syne;
-        font-weight: 400;
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-
-    #informations {
-        border-right: 1px solid #FFFFFF;
-        min-width: 410px;
-        padding-right: 30px;
+        max-width: 100%;
+        flex-direction: column;
     }
 
     #livraison {
-        min-width: 410px;
-        padding-left: 20px;
+        padding: 0;
     }
 
-    .labels {
-        margin-bottom: 15px;
-        border-color: #FFFFFF !important;
-        border-radius: 7px !important;
+    #informations {
+        border: none;
     }
 
     #envoi-commande {
-        width: 198px;
-        height: 55px;
-        background-color: #E0B9B4;
-        color: #FFFFFF;
-        text-align: center;
-        font-family: Syne;
-        font-size: 15px;
-        font-weight: 400;
-        border: #E0B9B4;
-        border-radius: 5px;
-        margin-left: 325px !important;
-        margin-bottom: 50px;
+        margin-left: auto !important;
     }
 
-    /*Responsive commande*/
-    @media (max-width: 450px) {
+}
 
-        .produits {
-            max-width: 450px;
-            display: flex !important;
-            flex-wrap: wrap;
-        }
 
-        #infos-livraison {
-            max-width: 100%;
-            flex-direction: column;
-        }
-
-        #livraison {
-            padding: 0;
-        }
-
-        #informations {
-            border: none;
-        }
-
-        #envoi-commande {
-            margin-left: auto !important;
-        }
-
+@media (min-width: 450px) and (max-width: 768px) {
+    .produits {
+        max-width: 90%;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-
-    @media (min-width:450px) and (max-width:768px) {
-        .produits {
-            max-width: 90%;
-            display: flex !important;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        #infos-livraison {
-            max-width: 90%;
-            flex-direction: column;
-        }
-
+    #infos-livraison {
+        max-width: 90%;
+        flex-direction: column;
     }
+
+}
