@@ -31,9 +31,6 @@ $skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
 <a class="skip-link screen-reader-text" href="<?php echo esc_url( $skip_link_url ); ?>"><?php echo esc_html__( 'Skip to content', 'hello-elementor' ); ?></a>
 <?php } ?>
 <div id="header">
-<a href="/Planty/index.php">
-    <img src="/Planty/wp-content/themes/Planty/images_planty/logo.png" alt="Logo de la marque" id="logo_planty">
-</a>
 <?php
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
 	if ( hello_elementor_display_header_footer() ) {

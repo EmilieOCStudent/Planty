@@ -10,11 +10,11 @@ body * {
     align-items: flex-start;
 }
 
-#logo_planty {
+.custom-logo {
     width: 201px;
     height: 19px;
-    margin-left: 37px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 15px;
     display: inline-block;
 }
 
@@ -26,20 +26,20 @@ li.menu-item {
 
 }
 
-#menu-item-52, #menu-item-53 {
+.menu-item-52, .menu-item-53 {
     width: 236px;
     height: 80px;
 }
 
-#menu-item-52 {
+.menu-item-52 {
     background-color: #DC9F96;
 }
 
-#menu-item-52 a {
+.menu-item-52 a {
     color: #FFFFFF;
 }
 
-#menu-item-53 a {
+.menu-item-53 a {
     color: #000000;
 }
 
@@ -84,11 +84,14 @@ li.menu-item {
     #header {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 1rem;
+        justify-content: center; /**/
+        margin: 0; /**/
         width: 100%;
     }
 
+    .menu-principal-container {
+        width: 100%; /**/
+    }
 
     ul {
         padding: 0;
@@ -99,6 +102,15 @@ li.menu-item {
         align-items: stretch;*/
         display: flex;
         align-items: center;
+        width: 100%; /**/
+    }
+
+    .wp-image-180 {
+        margin-right: 34px; /**/
+    }
+
+    .wp-image-182 {
+        margin-left: 34px; /**/
     }
 }
 
@@ -247,6 +259,12 @@ li.menu-item {
     width: 100%;
     min-width: 450px;
     z-index: 2;
+}
+
+@media(max-width: 450px) {
+    .section1, .équipe {
+        min-width: unset;
+    }
 }
 
 .branche_équipe {
@@ -416,10 +434,17 @@ input[type="number"] {
 /*Responsive commande*/
 @media (max-width: 450px) {
 
+    .elementor-heading-title {
+        font-size: 1rem !important;
+    }
+
     .produits {
-        max-width: 450px;
+        max-width: 100%; /*450px*/
         display: flex !important;
         flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     #infos-livraison {
@@ -429,14 +454,18 @@ input[type="number"] {
 
     #livraison {
         padding: 0;
+        min-width: 100%; /*a cause de la ligne 403*/
     }
 
     #informations {
         border: none;
+        padding: 0;
+        min-width: 100%; /*a cause de la ligne 398*/
     }
 
     #envoi-commande {
         margin-left: auto !important;
+        width: 100%;
     }
 
 }
@@ -455,4 +484,19 @@ input[type="number"] {
         flex-direction: column;
     }
 
+    #informations {
+        border: none;
+        padding: 0;
+        min-width: 100%; /*a cause de la ligne 398*/
+    }
+
+    #livraison {
+        padding: 0;
+        min-width: 100%; /*a cause de la ligne 403*/
+    }
+
+
+        #envoi-commande {
+        margin-left: auto !important;
+    }
 }
